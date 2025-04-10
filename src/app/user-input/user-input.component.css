@@ -3,7 +3,9 @@ form {
     max-width: 30rem;
     margin: 2rem auto;
     border-radius: 4px;
-    background: linear-gradient(180deg, #307e6c, #2b996d);
+    
+    
+    background: linear-gradient(180deg, #227e68, #366351);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -11,6 +13,7 @@ form {
     display: flex;
     justify-content: space-evenly;
     gap: 1.5rem;
+    
   }
   
   label {
@@ -20,15 +23,17 @@ form {
     font-size: 0.5rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 22px;
+    color: #25c9d5;
   }
   
   input {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #76c0ae;
+    border: 1px solid #5ad1b4;
     border-radius: 0.25rem;
     background-color: transparent;
-    color: #c2e9e0;
+    color: #ffffff;
     font-size: 1rem;
   }
   
@@ -39,10 +44,11 @@ form {
     border-radius: 0.25rem;
     background-color: #83e6c0;
     color: #1a1f1d;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    color: #16696f;
   }
   
   button:hover {
