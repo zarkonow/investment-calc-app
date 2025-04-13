@@ -4,15 +4,22 @@ table {
     padding: 1rem;
     table-layout: fixed;
     border-spacing: 1rem;
+    
 }
 
 table thead {
+    text-align: left;
     font-size: 0.7rem;
     color: #83e6c0;
+    
 }
 
 table tbody{
+    text-align: left;
     font-size: 1.2rem;
     color: #fff;
     font-family: "Roboto Condensed", sans-serif;
+    
+    
 }
+
