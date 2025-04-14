@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
 
 import { InvestmentService } from '../investment.service';
 
 @Component({
   selector: 'app-user-input',
-  imports: [FormsModule],
+  standalone: false,
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.css'
 })
@@ -22,11 +22,13 @@ export class UserInputComponent {
 
 
   onSubmit() {
-    this.investmentService.onCalculateInvestmentResults({initialInvestment: +this.enteredInitialInvestment,
+    this.investmentService.onCalculateInvestmentResults({
+      initialInvestment: +this.enteredInitialInvestment,
       duration: +this.enteredDuration,
       expectedReturn: +this.enteredExpectedReturn,
-      annualInvestment: +this.enteredAnnualInvestment,})
-   
+      annualInvestment: +this.enteredAnnualInvestment,
+    })
+
     this.enteredAnnualInvestment.set('0')
     this.enteredInitialInvestment.set('0')
     this.enteredDuration.set('10')
